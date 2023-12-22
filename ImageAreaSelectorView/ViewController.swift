@@ -2,16 +2,23 @@
 //  ViewController.swift
 //  ImageAreaSelectorView
 //
-//  Created by SomnicsAndrew on 2023/12/22.
+//  Created on 2023/12/22.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
+    var customView: ImageAreaSelectorView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        customView = ImageAreaSelectorView(frame: CGRect(x: 50, y: 100, width: 300, height: 300))
+        if let customView = customView {
+            customView.backgroundColor = .yellow
+            self.view.addSubview(customView)
+        }
+        
     }
 
 

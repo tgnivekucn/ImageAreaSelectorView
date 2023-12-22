@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ImageAreaSelectorView
 //
-//  Created by SomnicsAndrew on 2023/12/22.
+//  Created on 2023/12/22.
 //
 
 import UIKit
