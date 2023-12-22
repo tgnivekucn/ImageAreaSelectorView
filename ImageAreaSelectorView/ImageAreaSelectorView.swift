@@ -241,7 +241,8 @@ class ImageAreaSelectorView: UIView {
     func checkIfSmallerThanMinSize(frame: CGRect) -> Bool {
         let lhs = frame.size
         let rhs = minimumSelectAreaSize
-        return (lhs.width < rhs.width) && (lhs.height < rhs.height)
+        return ((lhs.width < rhs.width) && (lhs.height < rhs.height))
+                || (lhs.width < 20) || (lhs.height < 20)
     }
     
     func getMaxScale(selectAreaFrame: CGRect, targetFrame: CGRect) -> CGFloat {
